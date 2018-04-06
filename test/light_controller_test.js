@@ -8,7 +8,7 @@ describe('LightController', () => {
 
       let search = controller.search();
 
-      expect(search).to.eventually.be.an(Array)
+      expect(search).to.eventually.be.an(Array).that.is.not.empty;
     });
   });
 });

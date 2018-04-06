@@ -1,2 +1,6 @@
-global.expect = require('chai').expect;
+let chai = require('chai');
+let chaiAsPromised = require("chai-as-promised");
+chai.use(chaiAsPromised);
+
+global.expect = chai.expect;
 global.pry = require('pryjs');
